@@ -12,26 +12,25 @@ function load_menu(){
     <div class="block_nav">
         <ul class="navigation">
             <li><a href="index.php">Главная</a></li>
-            <li><a href="stroki.php">Строки</a>
+            <li><a href="LR1.php">ЛР1</a></li>
+            <li><a>ЛР2</a>
                 <ul>
                     <li><a href=".">Задание 1</a></li>
                     <li><a href=".">Задание 2</a></li>
                 </ul>
             </li>
-            <li><a href=".">Массивы</a>
+            <li><a>ЛР2</a>
                 <ul>
                     <li><a href=".">Задание 1</a></li>
                     <li><a href=".">Задание 2</a></li>
                 </ul>
             </li>
-            <li><a href=".">Классы</a></li>
-            <li><a href=".">Слайды</a></li>
         </ul>
     </div>
 <?php
 }
 
-function load_index_content(){
+function load_LR1_content(){
 ?>
     <form id="frmlb1" method="post" action="">
         <fieldset id="fslb1">
@@ -49,8 +48,8 @@ function load_index_content(){
 <?php
 }
 
-function load_stroki_content(){
-    print "<p>Загрузка файла</p>";
+function load_index_content(){
+    print "<p>Это главная страница</p>";
 }
 
 function print_page_head($head){
@@ -63,8 +62,8 @@ function load_page(){
     if ($page=="index"){
         load_index_content();
     }
-    if ($page=="stroki"){
-        load_stroki_content();
+    if ($page=="LR1"){
+        load_LR1_content();
     }
 }
 

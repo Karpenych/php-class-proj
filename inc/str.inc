@@ -12,7 +12,7 @@
 
 <article>
     <?php
-        print_page_head($z);
+        print_page_head($head);
         load_page();
     ?>
 </article>
