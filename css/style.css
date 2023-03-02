@@ -97,9 +97,9 @@ footer h2 {
 }
 
 
-/*------------------------FORM (LAB1)-------------------------------------*/
+/*------------------------FORM-------------------------------------*/
 
-#fslb1{
+fieldset{
     width: 60%;
     max-width: 60%;
     margin-left: 20%;
@@ -110,13 +110,13 @@ footer h2 {
     backdrop-filter: blur(5px);
 }
 
-#fslb1 > legend{
+fieldset > legend{
     margin-left: 5%;
     font-size: 24px;
     color: #15130e;
 }
 
-#fslb1 > select{
+fieldset > select{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     width: auto;
@@ -124,7 +124,7 @@ footer h2 {
     border: 3px solid var(--border-color);
 }
 
-#fslb1 > input[type = submit]{
+fieldset > input[type = submit], input[type = text]{
     padding: 0.3%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
@@ -132,9 +132,20 @@ footer h2 {
     border-color: var(--border-color);
 }
 
-#fslb1 > #cinema_descr{
+fieldset > ::placeholder {
+    color: rgb(162, 145, 106);
+ }
 
-    /*font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+fieldset > label{
+    color: var(--h-Color);
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+/*------------------------FORM_LR1-------------------------------------*/
+
+#fslb1 > #cinema_descr{
     font-family:'lucida grande',tahoma,verdana,arial,sans-serif;
     font-size: 20px;
     font-weight: normal;
@@ -155,4 +166,15 @@ footer h2 {
 #fslb1 > #sheduler_text{
     padding: 2%;
     text-align: center;
+}
+
+/*------------------------FORM_LR2_2-------------------------------------*/
+
+#fslb2_2 > div{
+    font-family: monospace, monospace;
+    font-size: 20px;
+    font-weight: normal;
+    color: #15130e;
+    margin-top: 3%;
+    padding:0 2%;
 }

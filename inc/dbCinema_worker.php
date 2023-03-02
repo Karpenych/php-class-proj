@@ -1,7 +1,17 @@
 <?php
 
-include "{$_SERVER['DOCUMENT_ROOT']}/php-class-proj/inc/dbconnector.php";
+$host = 'localhost';
+$user = 'root';
+$pass = 'usbw';
+$dbname = 'dbcinema';
 
+
+try {
+    $DBH = new PDO("mysql:host=$host;dbname=$dbname;charset=UTF8", $user, $pass);
+}
+catch(PDOException $e) {
+    echo $e->getMessage();
+}
 
 function get_cinema_name(){
     if(isset($_POST['bt_submit']) && isset($_POST['cinema_selector']) && $_POST['cinema_selector'] != '-1'){
