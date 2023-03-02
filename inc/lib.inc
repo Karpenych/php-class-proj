@@ -26,8 +26,8 @@ function load_menu(){
             </li>
             <li><a>ЛР3</a>
                 <ul>
-                    <li><a href=".">Задание 1</a></li>
-                    <li><a href=".">Задание 2</a></li>
+                    <li><a href="LR3_1.php">Задание 1</a></li>
+                    <li><a href="LR3_2.php">Задание 2</a></li>
                 </ul>
             </li>
         </ul>
@@ -83,20 +83,53 @@ function load_LR2_2_content(){
 <?php
 }
 
+function load_LR3_1_content(){
+?>
+    <form method="post" action="">
+    <fieldset id="fslb3_1">
+        <legend><b>Строки-1</b></legend>
+        <input type="submit" name="bt_submit" value="Выполнить"/>
+        <?php lab3_1(); ?>
+    </fieldset>
+    </form>
+<?php
+}
+
+function load_LR3_2_content(){
+?>
+    <form method="post" action="">
+    <fieldset id="fslb3_2">
+        <legend><b>Строки-2</b></legend>
+        <input type="submit" name="bt_submit" value="Выполнить"/>
+        <?php lab3_2(); ?>
+    </fieldset>
+    </form>
+<?php
+}
+
 function load_page(){
     global $page;
 
-    if ($page=="index"){
-        load_index_content();
-    }
-    if ($page=="LR1"){
-        load_LR1_content();
-    }
-    if ($page=="LR2_1"){
-        load_LR2_1_content();
-    }
-    if ($page=="LR2_2"){
-        load_LR2_2_content();
+    switch ($page)
+    {
+        case "index":
+            load_index_content();
+            break;
+        case "LR1":
+            load_LR1_content();
+            break;
+        case "LR2_1":
+            load_LR2_1_content();
+            break;
+        case "LR2_2":
+            load_LR2_2_content();
+            break;
+        case "LR3_1":
+            load_LR3_1_content();
+            break;
+        case "LR3_2":
+            load_LR3_2_content();
+            break;
     }
 }
 

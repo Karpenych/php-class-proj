@@ -2,7 +2,7 @@
 
 $host = 'localhost';
 $user = 'root';
-$pass = 'usbw';
+$pass = 'Borisenco28#';
 $dbname = 'dbcinema';
 
 

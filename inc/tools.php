@@ -29,5 +29,17 @@ function GetRandomEnglishLetters(){
     }
 }
 
+function lab3_1(){
+    $str = htmlentities(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/php-class-proj/txt/lab3.txt"));
+    print "<p>Исходный текст: '$str'</p>";
+
+}
+
+function lab3_2(){
+    $str = htmlentities(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/php-class-proj/txt/lab3.txt"));
+    print "<p>Исходный текст: '$str'</p>";
+
+}
+
 
 ?>
