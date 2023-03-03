@@ -30,6 +30,11 @@ function GetRandomEnglishLetters(){
 }
 
 function lab3_1(){
+    $str = htmlentities(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/php-class-proj/txt/lab3.txt"));
+    $str = "попрыгунья стрекоза $str";
+    $strToDel = "оглянуться не успела";
+    $posStrToDel = mb_strpos($str, $strToDel, 'utf-8');
+    print "<p>$posStrToDel</p>";
 
 }
 
