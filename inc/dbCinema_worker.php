@@ -1,8 +1,8 @@
 <?php
 
 $host = 'localhost';
-$user = 'root';
-$pass = 'Borisenco28#';
+$user = 'dbcinema_admin';
+$pass = 'Qwerqwer1';
 $dbname = 'dbcinema';
 
 
