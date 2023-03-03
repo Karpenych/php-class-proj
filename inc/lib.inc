@@ -88,6 +88,14 @@ function load_LR3_1_content(){
     <form method="post" action="">
     <fieldset id="fslb3_1">
         <legend><b>Строки-1</b></legend>
+        <p>Вариант 4</p>
+        <p>В строке «лето красное пропела оглянуться не успела» вставить в начало строки
+        «попрыгунья стрекоза» и убрать в конце «оглянуться не успела», первую букву
+        сделать прописной.</p>
+        <?php
+        $str = htmlentities(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/php-class-proj/txt/lab3.txt"));
+        print "<p>Исходный текст: '$str'</p>";
+        ?>
         <input type="submit" name="bt_submit" value="Выполнить"/>
         <?php lab3_1(); ?>
     </fieldset>
@@ -100,6 +108,13 @@ function load_LR3_2_content(){
     <form method="post" action="">
     <fieldset id="fslb3_2">
         <legend><b>Строки-2</b></legend>
+        <p>Вариант 4</p>
+        <p>Дана строка $str. Вырежьте из нее подстроку с 3-го символа (отсчет с нуля), 5
+        штук и вместо нее вставьте '!!!'.</p>
+        <?php
+        $str = htmlentities(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/php-class-proj/txt/lab3.txt"));
+        print "<p>Исходный текст: '$str'</p>";
+        ?>
         <input type="submit" name="bt_submit" value="Выполнить"/>
         <?php lab3_2(); ?>
     </fieldset>
