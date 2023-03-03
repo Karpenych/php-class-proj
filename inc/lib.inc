@@ -97,9 +97,7 @@ function load_LR3_1_content(){
         print "<p>Исходный текст: '$str'</p>";
         ?>
         <input type="submit" name="bt_submit" value="Выполнить"/>
-        <?php
-        lab3_1();
-        ?>
+        <?php lab3_1(); ?>
     </fieldset>
     </form>
 <?php
